@@ -100,8 +100,7 @@ submit.addEventListener('click', () => {
         data = JSON.stringify(data);
     }
     else {
-        data = document.getElementById("responsePrism").innerHTML;
-        Prism.highlightAll();
+      data = document.getElementById("requestJsonText").value;
     }
     // log all the value in the console for debugging
     console.log("URL is", url)
